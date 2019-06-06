@@ -3,7 +3,7 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "root",
+  password: "Pass@1234",
   database: "qlevubl0mzpx1ob2"
 });
 
@@ -17,7 +17,7 @@ if (process.env.JAWSDB_URL) {
     database: 'todoagain_db',
   });
 };
-connection.connect(function(err) {
+connection.connect(function (err) {
   if (err) {
     console.error("error connecting: " + err.stack);
     return;
